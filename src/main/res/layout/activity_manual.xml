@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ManualActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:tint="@color/White"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/outline_arrowback"
+                    android:id="@+id/HomeArrow"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manual System"
+                    android:textColor="@color/White"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/HomeArrow"/>
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Pump on"
+                android:id="@+id/on"
+                android:textColor="@color/White"
+                android:background="@drawable/button_gradient"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Pump Off"
+                android:textColor="@color/White"
+                android:id="@+id/off"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_gradient"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pump Status : ON"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:textSize="20sp"
+                android:textColor="@color/Black"
+                android:id="@+id/pmanualstatus"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
